@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import 'materialize-css';
 import { NavbarComponent } from './components/share/navbar/navbar.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
