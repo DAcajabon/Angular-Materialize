@@ -17,5 +17,10 @@ export class NavbarComponent implements OnInit {
       $('.sidenav').sidenav();
     });
 
+    $(document).ready(function(){
+      $('.collapsible').collapsible();
+    });
+
+
   }
 }
