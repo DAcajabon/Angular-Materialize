@@ -6,15 +6,16 @@ declare var $: any;
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.jquery_code();
   }
 
-  jquery_code(){
-    $('.dropdown-trigger').dropdown();
-  }
+  jquery_code() {
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
 
+  }
 }
