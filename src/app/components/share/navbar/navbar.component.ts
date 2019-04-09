@@ -21,6 +21,17 @@ export class NavbarComponent implements OnInit {
       $('.collapsible').collapsible();
     });
 
+    $(document).ready(function(){
+      $('div.collapsible-body ul li').on('click', function(){
+          var clicked = $(this);
+          $('div.collapsible-body ul li').each(function(){
+              if($(this).hasClass('active')){
+                  $(this).removeClass('active');
+              }
+          });
+          $(this).addClass('active');
+      });
+  });
 
   }
 }
